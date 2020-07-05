@@ -257,15 +257,3 @@ lib64/libOmxMux.so
 lib64/libqdMetaData.system.so
 lib64/libwfdclient.so
 lib64/libwfdnative.so
-
-# Xiaomi libs dependencies
-lib/vendor.xiaomi.hardware.mfidoca@1.0.so
-lib/vendor.xiaomi.hardware.mlipay@1.0.so
-lib/vendor.xiaomi.hardware.mlipay@1.1.so
-lib/vendor.xiaomi.hardware.mtdservice@1.0.so
-lib/vendor.xiaomi.hardware.mtdservice@1.1.so
-lib64/vendor.xiaomi.hardware.mfidoca@1.0.so
-lib64/vendor.xiaomi.hardware.mlipay@1.0.so
-lib64/vendor.xiaomi.hardware.mlipay@1.1.so
-lib64/vendor.xiaomi.hardware.mtdservice@1.0.so
-lib64/vendor.xiaomi.hardware.mtdservice@1.1.so

@@ -18,27 +18,27 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
- # Inherit from daisy device
-$(call inherit-product, device/xiaomi/daisy/device.mk)
+ # Inherit from GM8_sprout device
+$(call inherit-product, device/GM/GM8_sprout/device.mk)
 
  # Inherit some common Lineage stuff.	
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
  # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_daisy
-PRODUCT_DEVICE := daisy
-PRODUCT_BRAND := Xiaomi
-PRODUCT_MODEL := MI A2 Lite
-PRODUCT_MANUFACTURER := Xiaomi
+PRODUCT_NAME := lineage_GM8_sprout
+PRODUCT_DEVICE := GM8_sprout
+PRODUCT_BRAND := GM
+PRODUCT_MODEL := GM 8
+PRODUCT_MANUFACTURER := General Mobile
 
-PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
+PRODUCT_GMS_CLIENTID_BASE := android-gm-a1
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="daisy_sprout" \
-    PRODUCT_NAME="daisy_sprout" \
-    PRIVATE_BUILD_DESC="daisy-user 9 PKQ1.180917.001 V10.0.9.0.PDLMIXM release-keys "
+    TARGET_DEVICE="GM8_sprout" \
+    PRODUCT_NAME="GM8_sprout" \
+    PRIVATE_BUILD_DESC="msm8937_64-user 8.1.0 OPM1.171019.011 411 release-keys "
 
 # Set BUILD_FINGERPRINT variable to be picked up by both system and vendor build.prop	
-BUILD_FINGERPRINT := "xiaomi/daisy/daisy_sprout:9/PKQ1.180917.001/V10.0.9.0.PDLMIXM:user/release-keys"
+BUILD_FINGERPRINT := "GM/GM8/GM8_sprout:8.1.0/OPM1.171019.011/411:user/release-keys"
 
-TARGET_VENDOR := Xiaomi
+TARGET_VENDOR := GM

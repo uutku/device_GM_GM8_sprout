@@ -7,8 +7,8 @@
 
 set -e
 
-DEVICE=daisy
-VENDOR=xiaomi
+DEVICE=GM8_sprout
+VENDOR=GM
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"

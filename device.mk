@@ -18,7 +18,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/xiaomi/daisy/daisy-vendor.mk)
+$(call inherit-product-if-exists, vendor/GM/GM8_sprout/GM8_sprout-vendor.mk)
 
 # Properties
 -include $(LOCAL_PATH)/device-props.mk
@@ -30,7 +30,7 @@ DEVICE_PACKAGE_OVERLAYS += \
 
 # Screen density
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := xxhdpi
+PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # A/B
 AB_OTA_UPDATER := true
@@ -77,10 +77,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.display.config@1.0
 
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
-
 # FM
 PRODUCT_PACKAGES += \
     FM2 \
@@ -99,13 +95,10 @@ PRODUCT_PACKAGES += \
 
 # Input
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc \
-    $(LOCAL_PATH)/idc/uinput-goodix.idc:system/usr/idc/uinput-goodix.idc
+    $(LOCAL_PATH)/idc/uinput-fpc.idc:system/usr/idc/uinput-fpc.idc
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/keylayout/msm8953-snd-card-mtp_Button_Jack.kl:system/usr/keylayout/msm8953-snd-card-mtp_Button_Jack.kl \
-    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl \
-    $(LOCAL_PATH)/keylayout/uinput-goodix.kl:system/usr/keylayout/uinput-goodix.kl
+    $(LOCAL_PATH)/keylayout/uinput-fpc.kl:system/usr/keylayout/uinput-fpc.kl
 
 # LiveDisplay HAL
 PRODUCT_PACKAGES += \
@@ -139,7 +132,7 @@ PRODUCT_PACKAGES += \
     update_verifier
 
 PRODUCT_STATIC_BOOT_CONTROL_HAL := \
-    bootctrl.msm8953 \
+    bootctrl.msm8937 \
     libcutils \
     libgptutils \
     libz
@@ -149,7 +142,7 @@ PRODUCT_PACKAGES_DEBUG += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service.daisy
+    android.hardware.usb@1.0-service.GM8_sprout
 
 # VNDK-SP
 PRODUCT_PACKAGES += \

@@ -7,10 +7,10 @@
 
 set -e
 
-DEVICE=daisy
-VENDOR=xiaomi
+DEVICE=GM8_sprout
+VENDOR=GM
 
-INITIAL_COPYRIGHT_YEAR=2019
+INITIAL_COPYRIGHT_YEAR=2018
 
 # Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
